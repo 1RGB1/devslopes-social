@@ -14,6 +14,11 @@
 		E093101E1F9B45A40075D546 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E093101D1F9B45A40075D546 /* Assets.xcassets */; };
 		E09310211F9B45A40075D546 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E093101F1F9B45A40075D546 /* LaunchScreen.storyboard */; };
 		E09310291F9B46790075D546 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E09310281F9B46780075D546 /* GoogleService-Info.plist */; };
+		E0BB103E1F9F9D0D00B7C29E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB103D1F9F9D0D00B7C29E /* Constants.swift */; };
+		E0BB10401F9F9D7000B7C29E /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB103F1F9F9D7000B7C29E /* FancyView.swift */; };
+		E0BB10421F9F9E1000B7C29E /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB10411F9F9E1000B7C29E /* FancyButton.swift */; };
+		E0BB10441F9F9EA700B7C29E /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB10431F9F9EA700B7C29E /* FancyField.swift */; };
+		E0BB10461F9F9F8900B7C29E /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB10451F9F9F8900B7C29E /* RoundButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,11 @@
 		E09310201F9B45A40075D546 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E09310221F9B45A40075D546 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E09310281F9B46780075D546 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E0BB103D1F9F9D0D00B7C29E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E0BB103F1F9F9D7000B7C29E /* FancyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
+		E0BB10411F9F9E1000B7C29E /* FancyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
+		E0BB10431F9F9EA700B7C29E /* FancyField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
+		E0BB10451F9F9F8900B7C29E /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		F76C55B76AD3E8CD7021931D /* Pods-devslopes-social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devslopes-social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-devslopes-social/Pods-devslopes-social.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +92,7 @@
 			children = (
 				E093102A1F9B46BE0075D546 /* Supporting Files */,
 				E093102B1F9B46CD0075D546 /* Resources */,
+				E0BB103C1F9F9CF700B7C29E /* Util */,
 				E093102C1F9B46D80075D546 /* Model */,
 				E093102D1F9B46E20075D546 /* View */,
 				E0CC28C61F9B4718007C01C8 /* Controller */,
@@ -119,8 +130,20 @@
 		E093102D1F9B46E20075D546 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E0BB103F1F9F9D7000B7C29E /* FancyView.swift */,
+				E0BB10411F9F9E1000B7C29E /* FancyButton.swift */,
+				E0BB10431F9F9EA700B7C29E /* FancyField.swift */,
+				E0BB10451F9F9F8900B7C29E /* RoundButton.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E0BB103C1F9F9CF700B7C29E /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				E0BB103D1F9F9D0D00B7C29E /* Constants.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		E0CC28C61F9B4718007C01C8 /* Controller */ = {
@@ -255,8 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0BB10441F9F9EA700B7C29E /* FancyField.swift in Sources */,
 				E09310191F9B45A40075D546 /* SignInVC.swift in Sources */,
+				E0BB10461F9F9F8900B7C29E /* RoundButton.swift in Sources */,
 				E09310171F9B45A40075D546 /* AppDelegate.swift in Sources */,
+				E0BB10401F9F9D7000B7C29E /* FancyView.swift in Sources */,
+				E0BB103E1F9F9D0D00B7C29E /* Constants.swift in Sources */,
+				E0BB10421F9F9E1000B7C29E /* FancyButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
