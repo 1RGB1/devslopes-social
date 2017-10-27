@@ -22,6 +22,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZxZ-Ea-Pgq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <action selector="dismissKeyboardBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VY3-EF-EWi"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OjN-ku-GAI" customClass="FancyView" customModule="devslopes_social" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                                 <subviews>
@@ -98,6 +104,9 @@
                                         <state key="normal" title="Sign in">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signInBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ubj-jS-hOi"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -109,11 +118,15 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JrY-Xb-qxx" secondAttribute="trailing" id="2My-E4-rwJ"/>
                             <constraint firstItem="DjS-ES-x8i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4n6-oo-acz"/>
                             <constraint firstItem="nlA-lH-Qce" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="57z-qa-Y7I"/>
+                            <constraint firstItem="ZxZ-Ea-Pgq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5O6-4g-qUl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZxZ-Ea-Pgq" secondAttribute="bottom" id="DiK-KP-Lcl"/>
+                            <constraint firstItem="ZxZ-Ea-Pgq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="EDu-11-isA"/>
                             <constraint firstItem="JrY-Xb-qxx" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="F6G-VI-tLk"/>
                             <constraint firstItem="JrY-Xb-qxx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="M1V-OA-fCd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OjN-ku-GAI" secondAttribute="trailing" id="NLj-Fq-NRI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DjS-ES-x8i" secondAttribute="trailing" constant="20" id="S99-AL-a9y"/>
                             <constraint firstItem="OjN-ku-GAI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="VVZ-Nz-kkU"/>
+                            <constraint firstItem="ZxZ-Ea-Pgq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cMc-7N-CfL"/>
                             <constraint firstItem="DjS-ES-x8i" firstAttribute="top" secondItem="nlA-lH-Qce" secondAttribute="bottom" constant="40" id="eqG-Dp-ZGx"/>
                             <constraint firstItem="GCE-Tv-FgR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="f7J-WP-IF4"/>
                             <constraint firstItem="nlA-lH-Qce" firstAttribute="top" secondItem="GCE-Tv-FgR" secondAttribute="bottom" constant="40" id="lJ6-AD-va5"/>
@@ -122,6 +135,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTxtField" destination="JJu-Yf-HtW" id="YNt-va-pVW"/>
+                        <outlet property="passwordTxtField" destination="YsN-YS-wOh" id="T2b-Gi-ZHz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
