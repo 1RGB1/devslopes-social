@@ -22,6 +22,7 @@
 		E0BB10421F9F9E1000B7C29E /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB10411F9F9E1000B7C29E /* FancyButton.swift */; };
 		E0BB10441F9F9EA700B7C29E /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB10431F9F9EA700B7C29E /* FancyField.swift */; };
 		E0BB10461F9F9F8900B7C29E /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB10451F9F9F8900B7C29E /* RoundButton.swift */; };
+		E0E5CDD31FA3E4C4003CCBCA /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E5CDD21FA3E4C4003CCBCA /* FeedVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		E0BB10411F9F9E1000B7C29E /* FancyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
 		E0BB10431F9F9EA700B7C29E /* FancyField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		E0BB10451F9F9F8900B7C29E /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		E0E5CDD21FA3E4C4003CCBCA /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		F76C55B76AD3E8CD7021931D /* Pods-devslopes-social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devslopes-social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-devslopes-social/Pods-devslopes-social.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				E09310181F9B45A40075D546 /* SignInVC.swift */,
+				E0E5CDD21FA3E4C4003CCBCA /* FeedVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				E09310191F9B45A40075D546 /* SignInVC.swift in Sources */,
 				E0BB10461F9F9F8900B7C29E /* RoundButton.swift in Sources */,
 				E09310171F9B45A40075D546 /* AppDelegate.swift in Sources */,
+				E0E5CDD31FA3E4C4003CCBCA /* FeedVC.swift in Sources */,
 				E0BB10401F9F9D7000B7C29E /* FancyView.swift in Sources */,
 				E0BB103E1F9F9D0D00B7C29E /* Constants.swift in Sources */,
 				E0BB10421F9F9E1000B7C29E /* FancyButton.swift in Sources */,
@@ -440,6 +444,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F76C55B76AD3E8CD7021931D /* Pods-devslopes-social.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "devslopes-social/devslopes-social.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -461,6 +466,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 333790D2F6D4862EB366FA84 /* Pods-devslopes-social.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "devslopes-social/devslopes-social.entitlements";
 				CODE_SIGN_STYLE = Automatic;
